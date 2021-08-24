@@ -23,7 +23,23 @@ ul {
 a {
   text-decoration: none;
   font-family: var(--ff-opensans);
+  position: relative;
+  display: inline-block;
 }
+a::before {
+  content: '';
+  background-color: var(--clr-black);
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  padding: 0;
+  width: 0%;
+  transition: width .3s ease-in-out;
+}
+a:hover:before {
+  width: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -55,13 +71,13 @@ img {
   display: flex;
 }
 .nav__item {
-
+  padding: 0 10px;
 }
 .nav__link {
   color: white; 
   font-size: 20px; 
   font-weight: 600;
-  padding: 0 10px;
+  
 }
 .nav__item + .nav__item {
   margin-left: 15px
@@ -222,7 +238,7 @@ img {
 .list-container a {
   font-family: var(--ff-besley);
   color: var(--clr-black);
-  line-height: 0.9;
+  /* line-height: 1.4; */
 }
 .settings,
 .subscribe {
@@ -243,5 +259,6 @@ img {
   font-weight: 600;
   padding: 20px;
   width: 25%;
+  cursor: pointer;
 }
 /* end of footer */
