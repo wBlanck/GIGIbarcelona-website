@@ -207,3 +207,41 @@ img {
   background-position: center bottom;
 }
 /* end of journal */
+/* footer */
+.footer {
+  padding: 20px;
+}
+.footer__list-heading {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+.list-container a {
+  font-family: var(--ff-besley);
+  color: var(--clr-black);
+  line-height: 0.9;
+}
+.settings,
+.subscribe {
+  margin-top: 25px;
+}
+.subscribe__input {
+  border: 0;
+  font-size: 16px;
+  font-family: var(--ff-besley);
+  border-bottom: 2px solid black;
+  width: 50%;
+}
+.subscribe__btn {
+  border: none;
+  background-color: transparent;
+  font-family: var(--ff-opensans);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  width: 25%;
+}
+/* end of footer */
